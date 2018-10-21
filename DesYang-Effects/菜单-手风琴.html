@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <style>
+    body,
+    div,
+    dl,
+    dt,
+    dd,
+    ul,
+    ol,
+    li,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    pre,
+    code,
+    form,
+    fieldset,
+    legend,
+    input,
+    button,
+    textarea,
+    p,
+    blockquote,
+    table,
+    th,
+    td {
+      margin: 0;
+      padding: 0;
+    }
+
+    li {
+      list-style: none;
+    }
+
+    .rotation-menu {
+      width: 500px;
+      height: 30px;
+      background: #ccc;
+      margin: 100px auto;
+      color: white;
+    }
+
+    .rotation-menu>li {
+      width: 100px;
+      height: 30px;
+      line-height: 30px;
+      float: left;
+      background: #333;
+      position: relative;
+      text-align: center;
+    }
+
+    .rotation-menu>li ul {
+      position: absolute;
+      left: 0;
+      top: 30px;
+    }
+
+    .rotation-menu>li ul li {
+      width: 100px;
+      height: 30px;
+      background: #333;
+      opacity: 0;
+      transition: all 0.5s ease-in-out;
+      transform: rotateY(180deg);
+    }
+
+    .rotation-menu>li:hover ul li {
+      transform: none;
+      opacity: 1;
+    }
+
+    /* 转过来 */
+
+    .rotation-menu>li:hover ul li:nth-child(1) {
+      transition-delay: 0ms;
+    }
+
+    .rotation-menu>li:hover ul li:nth-child(2) {
+      transition-delay: 100ms;
+    }
+
+    .rotation-menu>li:hover ul li:nth-child(3) {
+      transition-delay: 200ms;
+    }
+
+    .rotation-menu>li:hover ul li:nth-child(4) {
+      transition-delay: 300ms;
+    }
+
+    .rotation-menu>li:hover ul li:nth-child(5) {
+      transition-delay: 400ms;
+    }
+
+    /* 转回去 */
+
+    .rotation-menu>li ul li:nth-child(1) {
+      transition-delay: 400ms;
+    }
+
+    .rotation-menu>li ul li:nth-child(2) {
+      transition-delay: 300ms;
+    }
+
+    .rotation-menu>li ul li:nth-child(3) {
+      transition-delay: 200ms;
+    }
+
+    .rotation-menu>li ul li:nth-child(4) {
+      transition-delay: 100ms;
+    }
+
+    .rotation-menu>li ul li:nth-child(5) {
+      transition-delay: 0ms;
+    }
+  </style>
+</head>
+
+<body>
+  <div>
+    <ul class="rotation-menu">
+      <li>一级菜单
+        <ul>
+          <li>二级菜单</li>
+          <li>二级菜单</li>
+          <li>二级菜单</li>
+          <li>二级菜单</li>
+          <li>二级菜单</li>
+        </ul>
+      </li>
+      <li>一级菜单
+        <ul>
+          <li>二级菜单</li>
+          <li>二级菜单</li>
+          <li>二级菜单</li>
+          <li>二级菜单</li>
+          <li>二级菜单</li>
+        </ul>
+      </li>
+      <li>一级菜单
+        <ul>
+          <li>二级菜单</li>
+          <li>二级菜单</li>
+          <li>二级菜单</li>
+          <li>二级菜单</li>
+          <li>二级菜单</li>
+        </ul>
+      </li>
+      <li>一级菜单
+        <ul>
+          <li>二级菜单</li>
+          <li>二级菜单</li>
+          <li>二级菜单</li>
+          <li>二级菜单</li>
+          <li>二级菜单</li>
+        </ul>
+      </li>
+      <li>一级菜单
+        <ul>
+          <li>二级菜单</li>
+          <li>二级菜单</li>
+          <li>二级菜单</li>
+          <li>二级菜单</li>
+          <li>二级菜单</li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+</body>
+
+</html>
