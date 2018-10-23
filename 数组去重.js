@@ -45,5 +45,4 @@ function unique(arr) {
 function unique(arr) {
     return [...new Set(arr)]
 }
-
-//排序filter
+var arr = [1, 2, "2", 4, 9, "a", "a", 2, 3, 5, 6, 5];
