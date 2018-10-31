@@ -45,4 +45,6 @@ function unique(arr) {
 function unique(arr) {
     return [...new Set(arr)]
 }
-var arr = [1, 2, "2", 4, 9, "a", "a", 2, 3, 5, 6, 5];
+
+var arr = [1, 2,[2, [3, 4]]];
+console.log(...arr);
